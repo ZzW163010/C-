@@ -19,7 +19,7 @@ int main()
 
 
 
-//enum Sex //Ã¶¾Ù³£Á¿
+//enum Sex //æšä¸¾å¸¸é‡
 //{
 //	MALE,
 //	FMALE,

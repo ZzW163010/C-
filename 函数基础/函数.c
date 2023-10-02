@@ -1,8 +1,20 @@
 #define _CRT_SECURE_NO_WARNINGS 
 #include<stdio.h>
 #include<math.h>
+#inculde "add.h"		//åº“å‡½æ•°ç”¨<>ï¼Œè‡ªå®šä¹‰å‡½æ•°ç”¨""
+
+//å‡½æ•°çš„å£°æ˜å’Œå®šä¹‰
+int main()
+{
+	int a = 10;
+	int b = 15;
+	z = add(a, b);
+	printf("%d", z);
+}
 
 
+
+//æœ‰åºäºŒåˆ†æŸ¥æ‰¾çš„ä»£ç å®ç°ä»¥åŠå‡½æ•°å°è£…
 //void add(int* num)
 //{
 //	(*num)++;
@@ -49,17 +61,17 @@ int main()
 	int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
 	int k = 0;
 	int sz = sizeof(arr) / sizeof(arr[0]);
-	printf("ÇëÊäÈëÄúÒª²éÑ¯µÄÊı×Ö>>>:");
+	printf("è¯·è¾“å…¥æ‚¨è¦æŸ¥è¯¢çš„æ•°å­—>>>:");
 	scanf("%d", &k);
 	int ret = seek(arr,k,sz);
 	
 	if (ret == 1)
 	{
-		printf("²é²»µ½\n");
+		printf("æŸ¥ä¸åˆ°\n");
 	}
 	else
 	{
-		printf("±àºÅ==%d", ret);
+		printf("ç¼–å·==%d", ret);
 	}
 	return 0;
 }
@@ -81,16 +93,16 @@ int main()
 //int main()
 //{
 //	int a = 0;
-//	printf("ÇëÊäÈëÄê·İ>>>:");
+//	printf("è¯·è¾“å…¥å¹´ä»½>>>:");
 //	scanf("%d", &a);
 //
 //	if (lyear(a))
 //	{
-//		printf("ÊÇÈòÄê\n");
+//		printf("æ˜¯é—°å¹´\n");
 //	}
 //	else
 //	{
-//		printf("²»ÊÇÈòÄê\n");
+//		printf("ä¸æ˜¯é—°å¹´\n");
 //	}
 //	return 0;
 //}
@@ -118,20 +130,20 @@ int main()
 //{
 //	int a = 0;
 //
-//	printf("ÇëÊäÈëÒ»¸öÊı×Ö>>>");
+//	printf("è¯·è¾“å…¥ä¸€ä¸ªæ•°å­—>>>");
 //	scanf("%d", &a);
 //
 //	if (jug(a))
 //	{
-//		printf("¸ÃÊıÊÇËØÊı\n");
+//		printf("è¯¥æ•°æ˜¯ç´ æ•°\n");
 //	}
 //	else
 //	{
-//		printf("¸ÃÊı²»ÊÇËØÊı");
+//		printf("è¯¥æ•°ä¸æ˜¯ç´ æ•°");
 //	}
 //	return 0;
 //}
-//void swap2(int* pa, int* pb)	//ĞÎ²Î
+//void swap2(int* pa, int* pb)	//å½¢å‚
 //{
 //	int tmp = 0;
 //	tmp = *pa;
@@ -139,7 +151,7 @@ int main()
 //	*pb = tmp;
 //
 //}
-////ÓĞÎÊÌâ
+////æœ‰é—®é¢˜
 //void swap(int a, int b)
 //{
 //	int tmp = 0;
@@ -154,7 +166,7 @@ int main()
 //	int b = 20;
 //
 //	printf("a=%d b=%d", a, b);
-//	swap2(&a, &b);	//Êµ²Î
+//	swap2(&a, &b);	//å®å‚
 //
 //	printf("a=%d b=%d", a, b);
 //

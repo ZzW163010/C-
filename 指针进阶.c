@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS 
+ #define _CRT_SECURE_NO_WARNINGS 
 #include<stdio.h>
 
 //void test(int arr[])
@@ -16,7 +16,7 @@
 //int main()
 //{
 //	char* p = "abcdef";
-//	printf("%s\n", p);	//Ò»Ö±°´char*ÀàĞÍ½âÒıÓÃ£¬ÖªµÀÓöµ½'\0'
+//	printf("%s\n", p);	//ä¸€ç›´æŒ‰char*ç±»å‹è§£å¼•ç”¨ï¼ŒçŸ¥é“é‡åˆ°'\0'
 //	return 0;
 // }
 //int main()
@@ -47,7 +47,7 @@
 //	int ar[12] = { 0 };
 //	char ch[3] = { 0 };
 //
-//	int* pa[2] = {ar,ch};		//´æ·ÅÖ¸ÕëµÄÊı×é
+//	int* pa[2] = {ar,ch};		//å­˜æ”¾æŒ‡é’ˆçš„æ•°ç»„
 //
 //	return 0;
 //}
@@ -80,7 +80,7 @@ int main()
 		int j = 0;
 		for (j = 0; j < 5; j++)
 		{
-			printf("%d ", *(pa[i] + j));
+			printf("%d ", *(pa[i] + j));				//p[i]== *(p+i)--æ‰¾åˆ°äºŒç»´æ•°ç»„ä¸­å„ä¸€ç»´æ•°ç»„çš„é¦–åœ°å€ pæ˜¯ä¸€ç»´æ•°ç»„çš„åœ°å€
 		}
 		printf("\n");
 	}

@@ -87,3 +87,19 @@ int main()
 
 	return 0;
 }
+int a[3][4] = { 0 };
+//a是二维数组的数组名--满足数组名的条件
+	printf("%d\n", sizeof(a)); 	//此时表示整个二维数组
+	printf("%d\n", sizeof(a + 1));	//此时表示第二行一维数组的地址
+	
+//a[0]是第一行一维数组的数组名
+	printf("%d\n", sizeof(a[0]));	//此时表示整个一维数组
+	printf("%d\n", sizeof(a[0] + 1));//此时表示一维数组中第二个元素的地址
+
+	printf("%d\n", sizeof(a[0][0]));
+	printf("%d\n", sizeof(*(a[0] + 1)));
+	printf("%d\n", sizeof(*(a + 1)));
+	printf("%d\n", sizeof(&a[0] + 1));
+	printf("%d\n", sizeof(*(&a[0] + 1)));
+	printf("%d\n", sizeof(*a));
+	printf("%d\n", sizeof(a[3]));

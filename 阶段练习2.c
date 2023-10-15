@@ -2,8 +2,8 @@
 #include<stdio.h>
 #include<string.h>
 #include<assert.h>
-//ºÈÆûË®ÎÊÌâ
-//Ò»Æ¿1Ôª,Á½¸ö¿ÕÆ¿»»Ò»Æ¿£¬20Ôª¿ÉÒÔºÈ¼¸Æ¿
+//å–æ±½æ°´é—®é¢˜
+//ä¸€ç“¶1å…ƒ,ä¸¤ä¸ªç©ºç“¶æ¢ä¸€ç“¶ï¼Œ20å…ƒå¯ä»¥å–å‡ ç“¶
 //int main()
 //{
 //	int money = 0;
@@ -58,7 +58,7 @@
 //	return 0;
 //}
 
-//µ÷ÕûÊı×éÖĞÆæÊıºÍÅ¼ÊıµÄË³Ğò£¬ÆæÔÚÇ°Å¼ÔÚºó
+//è°ƒæ•´æ•°ç»„ä¸­å¥‡æ•°å’Œå¶æ•°çš„é¡ºåºï¼Œå¥‡åœ¨å‰å¶åœ¨å
 //void swap(int ar[], int sz)
 //{
 //	int i = 0;
@@ -81,14 +81,14 @@
 //	int left = 0;
 //	int right = sz - 1;
 //
-//	//ÕÒÅ¼Êı
+//	//æ‰¾å¶æ•°
 //	while (left < right)
 //	{
 //		while ((left < right) && (ar[left] % 2 == 1))
 //		{
 //			left++;
 //		}
-//		//ÕÒÆæÊı
+//		//æ‰¾å¥‡æ•°
 //		while ((left < right) && (ar[right] % 2 == 0))
 //		{
 //			right--;
@@ -114,9 +114,9 @@ int main()
 }
 */
 
-//×Ö·û´®×óĞı
-//ABCD×óĞıÒ»¸ö×Ö·ûµÃµ½BCDA
-//ABCD×óĞıÁ½¸ö×Ö·ûµÃµ½CDAB
+//å­—ç¬¦ä¸²å·¦æ—‹
+//ABCDå·¦æ—‹ä¸€ä¸ªå­—ç¬¦å¾—åˆ°BCDA
+//ABCDå·¦æ—‹ä¸¤ä¸ªå­—ç¬¦å¾—åˆ°CDAB
 
 //void vert(char ar[], int sz, int n)
 //{
@@ -179,7 +179,7 @@ int main()
 //	assert(ar != NULL);
 //	assert(arr != NULL);
 //
-//	//ÅĞ¶ÏÊÇ·ñ·ûºÏ×óĞı
+//	//åˆ¤æ–­æ˜¯å¦ç¬¦åˆå·¦æ—‹
 //	int len = strlen(ar);
 //	int rel = 0;
 //	int i = 0;
@@ -192,7 +192,7 @@ int main()
 //			break;
 //		}
 //	}
-//	//ÅĞ¶ÏÊÇ·ñ·ûºÏÓÒĞı
+//	//åˆ¤æ–­æ˜¯å¦ç¬¦åˆå³æ—‹
 //	int rer = 0;
 //	for (i = 0; i < len; i++)
 //	{
@@ -213,7 +213,7 @@ int main()
 //{
 //	int n = 0;
 //	//scanf("%d\n", &n);
-//	printf("ÇëÊäÈëÑéÖ¤×Ö·û´®\n");
+//	printf("è¯·è¾“å…¥éªŒè¯å­—ç¬¦ä¸²\n");
 //	//char ar[] = { 'A','B','C','D','F','G','H'};
 //	//int sz = sizeof(ar) / sizeof(ar[0]);
 //	char ar[] = "abcdef";
@@ -224,11 +224,11 @@ int main()
 //
 //	if (ret)
 //	{
-//		printf("¸Ã×Ö·û´®Îª·­×ª×Ö·û´®\n");
+//		printf("è¯¥å­—ç¬¦ä¸²ä¸ºç¿»è½¬å­—ç¬¦ä¸²\n");
 //	}
 //	else
 //	{
-//		printf("¸Ã×Ö·û´®²»ÊÇ·­×ª×Ö·û´®\n");
+//		printf("è¯¥å­—ç¬¦ä¸²ä¸æ˜¯ç¿»è½¬å­—ç¬¦ä¸²\n");
 //	}
 //
 //	return 0;
@@ -236,9 +236,9 @@ int main()
 int is_left_move(char* str1, char* str2)
 {
 	int len = strlen(str1);
-	//1.ÔÚstr1×Ö·û´®ÖĞ×·¼ÓÒ»¸östr1×Ö·û´®
+	//1.åœ¨str1å­—ç¬¦ä¸²ä¸­è¿½åŠ ä¸€ä¸ªstr1å­—ç¬¦ä¸²
 	strncat(str1, str1, 6);
-	//2.²éÕÒÊÇ·ñstr2·ûºÏ×·¼Ó¼Ó×Ö·û´®µÄ×Ó´®
+	//2.æŸ¥æ‰¾æ˜¯å¦str2ç¬¦åˆè¿½åŠ åŠ å­—ç¬¦ä¸²çš„å­ä¸²
 	char* ret = strstr(str1, str2);
 	if (ret == NULL)
 	{
@@ -263,6 +263,53 @@ int main()
 	else
 	{
 		printf("No\n");
+	}
+	return 0;
+}
+//æ¨æ°çŸ©é˜µ
+//æœ‰ä¸€ä¸ªæ•°å­—çŸ©é˜µï¼ŒçŸ©é˜µçš„æ¯è¡Œä»å·¦åˆ°å³æ˜¯é€’å¢çš„ï¼ŒçŸ©é˜µä»ä¸Šåˆ°ä¸‹æ˜¯é€’å¢çš„
+
+int FindNum(int arr[3][3], int k, int* px, int* py)
+{
+	int x = 0;
+	int y = *py;
+
+	while (x <= *px && y >= 0)
+	{
+		if (arr[x][y] > k)
+		{
+			y--;
+		}
+		else if (arr[x][y] < k)
+		{
+			x++;
+		}
+		else
+		{
+			*px = x;
+			*py = y;
+
+			return 1;
+		}
+	}
+	return 0;
+}
+int main()
+{
+	int arr[3][3] = { {1,2,3},{4,5,6},{7,8,9} };
+	int k = 1;
+	int x = 3;
+	int y = 3;
+
+	int ret = FindNum(arr, k, &x, &y);
+	if (ret)
+	{
+		printf("æ‰¾åˆ°äº†\n");
+		printf("è¯¥æ•°çš„ä¸‹æ ‡%d,%d\n", x, y);
+	}
+	else
+	{
+		printf("æ²¡æ‰¾åˆ°");
 	}
 	return 0;
 }

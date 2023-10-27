@@ -19,3 +19,18 @@ int main() {
     }
     return 0;
 }
+
+//实现字母的大小写转换多组输入输出
+
+#include <stdio.h>
+#include <string.h>
+int main() {
+    int ch = 0;
+    while ((ch = getchar()) != EOF) {
+        int ret = tolower(ch);
+        putchar(ret);
+        putchar('\n');
+        while ((ch = getchar()) != '\n');
+    }
+    return 0;
+}
